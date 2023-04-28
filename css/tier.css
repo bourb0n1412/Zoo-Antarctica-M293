@@ -1,0 +1,32 @@
+/* MVP.css v1.12 - https://github.com/andybrewer/mvp */
+
+* {
+    margin: 0;
+    padding: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+    min-height: 70vh;
+    width: 100;
+    background-image: url(/img/42008104_2614a3d22d_o.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+nav {
+    position: relative;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    position: absolute;
+    width: 150px;
+    right: 5%;
+
+}
