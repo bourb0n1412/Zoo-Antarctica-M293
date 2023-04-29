@@ -1,3 +1,5 @@
+/* MVP.css v1.12 - https://github.com/andybrewer/mvp */
+
 :root {
     --active-brightness: 0.85;
     --border-radius: 5px;
@@ -102,6 +104,7 @@ section aside:hover {
 }
 
 
+
 * {
     margin: 0;
     padding: 0%;
@@ -109,39 +112,12 @@ section aside:hover {
 }
 
 .header {
-    min-height: 70vh;
+    background-color: aliceblue;
+    height: 30vh;
     width: 100%;
-    background-position: center;
-    background-size: cover;
 }
 
-#Kaiserpinguin {
-    background-image: url(/img/emperor-penguins-429128.jpg);
-}
 
-#Zügelpinguin {
-    background-image: url(/img/42008104_2614a3d22d_o.jpg);
-}
-
-#Adeliepinguin {
-    background-image: url(/img/a-pair-of-adelie-penguins-photo-from-june-1984-all-hands-magazine-d14147-1600.jpg);
-}
-
-#Weddellrobbe {
-    background-image: url(/img/233fb77f529cf3c5ecf69e3e7c5083d276fb29cd.jpeg);
-}
-
-#Krabbenfresserrobben {
-    background-image: url(/img/42008104_2614a3d22d_o.jpg);
-}
-
-#Seeleoparden {
-    background-image: url(/img/42008104_2614a3d22d_o.jpg);
-}
-
-#Antarktikskua {
-    background-image: url(/img/42008104_2614a3d22d_o.jpg);
-}
 
 nav {
     position: relative;
@@ -151,6 +127,11 @@ nav {
     align-items: center;
 }
 
+h1{
+    text-align: center;
+    font-size: 40px;
+    
+}
 
 
 nav img {
@@ -302,6 +283,7 @@ label #cancel {
     padding: 10px 48px;
     box-shadow: 0 4px 30px -10px rgba(0, 0, 0, 0.2);
     width: 100%;
+    background: white;
 }
 
 .breadcrumbs ul {
@@ -328,6 +310,7 @@ label #cancel {
 .breadcrumbs ul li a {
     text-decoration: none;
     color: #000;
+    font-size: large;
 }
 
 .breadcrumbs ul li a:hover {
@@ -352,50 +335,11 @@ footer {
     font-weight: 700;
 }
 
-main h1 {
+main img{
+    display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    height: auto;
 }
 
-.user-orderstable {
-    background: #fff
-}
-
-.user-orderstable table {
-    border-top: 0
-}
-
-.user-orderstable thead {
-    background-color: #c00
-}
-
-.user-orderstable tr td,
-.user-orderstable tr th {
-    border-bottom: 2px solid #f7f7f7;
-    padding: 20px
-}
-
-.user-orderstable tr td:first-child {
-    font-weight: 600
-}
-
-.user-orders__table tr:last-child td {
-    border-bottom: none
-}
-
-main h1,
-h3 {
-    text-align: center;
-}
-
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 50%;
-    padding-left: 14px;
-    padding-right: 14px;
-}
-
-.container p {
-    text-align: center;
-}
