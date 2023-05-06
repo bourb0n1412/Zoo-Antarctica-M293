@@ -1,0 +1,196 @@
+<!-- MVP.css quickstart template: https://github.com/andybrewer/Index.html/ -->
+
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+
+    <head>
+        <link rel="icon" href="/img/Logo.png">
+        <link rel="stylesheet" href="/css/Quiz.css">
+        <script src="https://kit.fontawesome.com/67b6ea3fc4.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+
+        <meta charset="utf-8">
+        <meta name="description" content="My description">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Quiz</title>
+    </head>
+
+<body>
+    <div class="searchbar">
+        <li class="search-icon">
+            <input type="search" placeholder="search">
+            <label class="icon">
+                <span class="fa-solid fa-magnifying-glass"></span>
+            </label>
+        </li>
+    </div>
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fa-solid fa-xmark" id="cancel"></i>
+        <i class="fa-solid fa-bars" id="btn"></i>
+    </label>
+    <div class="sidebar">
+        <header> Zoo Antarctica </header>
+        <ul>
+            <li><a href="Kaiserpinguin.html">Kaiserpinguin</a></li>
+            <li><a href="Zügelpinguin.html">Zügelpinguin</a></li>
+            <li><a href="Adeliepinguin.html">Adeliepinguin</a></li>
+            <li><a href="Weddellrobbe.html">Weddellrobbe</a></li>
+            <li><a href="Krabbenfresserrobbe.html">Krabbenfresserrobbe</a></li>
+            <li><a href="Seeleopard.html">Seeleopard</a></li>
+            <li><a href="Antarktikskua.html">Antarktikskua</a></li>
+            <li><a href="/html/Map.html">Map</a></li>
+            <li><a href="Quiz.html">Quiz</a></li>
+            <li><a href="Oeffnungszeiten.html">Öffnungszeiten</a></li>
+            <li><a href="Preis.html">Preise</a></li>
+            <li><a href="UeberUns.html">Über uns</a></li>
+        </ul>
+    </div>
+    <section class="header">
+        <nav>
+
+            <a href="./Index.html"><img alt="Logo" src="/img/Logo Titel.png"></a>
+        </nav>
+        <h1 class="Titel">QUIZ</h1>
+        <p> Herzlich willkommen zu unserem Antarktis-Tier-Quiz! Teste dein Wissen über antarktische Tiere. Jede Frage
+            hat nur eine richtige Antwort, also wähle sorgfältig und viel Glück!</p>
+    </section>
+
+    <div class="breadcrumbs">
+        <ul>
+            <li>
+                <a href="Index.html"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 576 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com/ License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                        <path
+                            d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" />
+                    </svg></a>
+
+            </li>
+            <li>
+                <a href="Quiz.html">Quiz</a>
+            </li>
+        </ul>
+    </div>
+
+    <main>
+        <div class="quiz">
+            <br>
+            <h3>1. Wie nennt man den gössten Pinguin der Welt?</h3>
+            <input type="radio" name="question1" id="correct1">Kaiserpinguin <br>
+            <input type="radio" name="question1">Adeliepinguin <br>
+            <input type="radio" name="question1">Königspinguin <br>
+            <input type="radio" name="question1">Zügelpinguin <br>
+            <br>
+            <h3>2. Welche Robbenart ist die grösste in der Antarktis?</h3>
+            <input type="radio" name="question2">Krabbenfresserrobbe <br>
+            <input type="radio" name="question2">Weddellrobbe <br>
+            <input type="radio" name="question2" id="correct2">Seeleopard <br>
+            <input type="radio" name="question2">Rossrobbe <br>
+            <br>
+            <h3>3. Wie lange kann ein Kaiserpinguin unter Wasserbleiben?</h3>
+            <input type="radio" name="question3"> bis zu 5 Minuten<br>
+            <input type="radio" name="question3"> bis zu 60 Minuten <br>
+            <input type="radio" name="question3"> bis zu 30 Minuten <br>
+            <input type="radio" name="question3" id="correct3">bis zu 15 Minuten<br>
+            <br>
+            <h3>4. Welche Tierart ist für ihre lauten Rufe und Gesänge bekannt?</h3>
+            <input type="radio" name="question4"> Zügelpinguin<br>
+            <input type="radio" name="question4" id="correct4"> Adeliepinguin <br>
+            <input type="radio" name="question4"> Seeleopard<br>
+            <input type="radio" name="question4"> Antarktikskua<br>
+            <br>
+            <h3>5. Wie viele Arten von Pinguinen gibt es in der Antarktis?</h3>
+            <input type="radio" name="question5">10 <br>
+            <input type="radio" name="question5">7<br>
+            <input type="radio" name="question5" id="correct5">4<br>
+            <input type="radio" name="question5"> 1<br>
+            <br>
+            <h3>6. Welche Robbenart kann tief tauchen und bis zu 2000 Meter tief gehen?</h3>
+            <input type="radio" name="question6">Krabbenfresserrobbe<br>
+            <input type="radio" name="question6"> Rossrobbe<br>
+            <input type="radio" name="question6" id="correct6">Weddellrobbe <br>
+            <input type="radio" name="question6">Seeleopard<br>
+            <br>
+            <h3>7. Welches Tier ist für seie grossen,flügelartigen Flossen bekannt?</h3>
+            <input type="radio" name="question7">Krabbenfresserrobbe<br>
+            <input type="radio" name="question7" id="correct7"> Seeleopard <br>
+            <input type="radio" name="question7"> Weddellrobbe<br>
+            <input type="radio" name="question7"> Antarktikskua<br>
+            <br>
+            <h3>8. Welches Tier ernährt sich hauptsächlich von Krill?</h3>
+            <input type="radio" name="question8" id="correct8"> Adeliepinguin<br>
+            <input type="radio" name="question8"> Kaiserpinguin<br>
+            <input type="radio" name="question8"> Antarktikskua<br>
+            <input type="radio" name="question8"> Weddellrobbe<br>
+            <br>
+            <h3>9. Welches Tier kann bis zu 70 km/h schnell schwimmen?</h3>
+            <input type="radio" name="question9">Rossrobbe <br>
+            <input type="radio" name="question9"> Zügelpinguin<br>
+            <input type="radio" name="question9"> Krabbenfresserrobbe<br>
+            <input type="radio" name="question9" id="correct9"> Seeleopard<br>
+            <br>
+            <h3>10. Welches Tier ist für seine stromlinienförmige Körperform und seine Schnelligkeit unter Wasser
+                bekannt?</h3>
+            <input type="radio" name="question10"> Weddellrobbe<br>
+            <input type="radio" name="question10"> Seeleopard <br>
+            <input type="radio" name="question10"> Zügelpinguin<br>
+            <input type="radio" name="question10" id="correct10"> Krabbenfresserrobbe<br>
+            <br>
+
+            <input type="submit" name="submit" value="Submit" onClick="result()">
+
+            <br><br>
+            <p>ANMERKUNG: Die Lösungsseite ist in bearbeitung, wir bitten sie um Verständnis :D</p>
+            <script type="text/javascript">
+                function result() {
+                    var score = 0;
+                    if (document.getElementById('correct1').checked) {
+                        score++;
+
+                    }
+                    if (document.getElementById('correct2').checked) {
+                        score++;
+                    }
+                    if (document.getElementById('correct3').checked) {
+                        score++;
+                    }
+                    if (document.getElementById('correct4').checked) {
+                        score++;
+                    }
+                    if (document.getElementById('correct5').checked) {
+                        score++;
+                    }
+                    if (document.getElementById('correct6').checked) {
+                        score++;
+                    }
+                    if (document.getElementById('correct7').checked) {
+                        score++;
+                    }
+                    if (document.getElementById('correct8').checked) {
+                        score++;
+                    }
+                    if (document.getElementById('correct9').checked) {
+                        score++;
+                    }
+                    if (document.getElementById('correct10').checked) {
+                        score++;
+                    }
+                    document.write("Du hast " + score + "/10 Punkten erzielt.");
+                }
+            </script>
+        </div>
+        <br><br><br>
+    </main>
+    <footer>
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2023 Zoo Antarctica. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

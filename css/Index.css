@@ -56,10 +56,7 @@ body {
     padding: 0;
 }
 
-main {
-    margin: 0;
-    max-width: 100%;
-}
+
 
 hr {
     background-color: var(--color-bg-secondary);
@@ -101,67 +98,117 @@ section aside:hover {
     box-shadow: var(--box-shadow) var(--color-bg-secondary);
 }
 
+[hidden] {
+    display: none;
+}
+
+/* Headers */
+article header,
+div header,
+main header {
+    padding-top: 0;
+}
+
+header {
+    text-align: var(--justify-important);
+}
+
+header a b,
+header a em,
+header a i,
+header a strong {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+
+button:active,
+input[type="submit"]:active {
+    filter: brightness(var(--active-brightness));
+}
+
+button:hover,
+input[type="submit"]:hover {
+    cursor: pointer;
+    filter: brightness(var(--hover-brightness));
+}
+
+a b,
+a strong,
+button,
+input[type="submit"] {
+    background-color: var(--color-link);
+    border: 2px solid var(--color-link);
+    color: var(--color-bg);
+}
+
+a em,
+a i {
+    border: 2px solid var(--color-link);
+    border-radius: var(--border-radius);
+    color: var(--color-link);
+    display: inline-block;
+    padding: 1rem 2rem;
+}
+
+article aside a {
+    color: var(--color-secondary);
+}
+
+/* Images */
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figure img {
+    max-width: 100%;
+}
+
+figure figcaption {
+    color: var(--color-text-secondary);
+}
+
+/* Forms */
+button:disabled,
+input:disabled {
+    background: var(--color-bg-secondary);
+    border-color: var(--color-bg-secondary);
+    color: var(--color-text-secondary);
+    cursor: not-allowed;
+}
+
+button[disabled]:hover,
+input[type="submit"][disabled]:hover {
+    filter: none;
+}
+
+form {
+    border: 1px solid var(--color-bg-secondary);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow) var(--color-shadow);
+    display: block;
+    max-width: var(--width-card-wide);
+    min-width: var(--width-card);
+    padding: 1.5rem;
+    text-align: var(--justify-normal);
+}
 
 * {
     margin: 0;
-    padding: 0%;
+    padding: 0;
     font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
+
+
 
 .header {
-    min-height: 70vh;
+    background-color: aliceblue;
+    height: 30vh;
     width: 100%;
-    background-position: center;
-    background-size: cover;
 }
-
-#Kaiserpinguin {
-    background-image: url(/img/emperor-penguins-429128.jpg);
-}
-
-#Zügelpinguin {
-    background-image: url(/img/42008104_2614a3d22d_o.jpg);
-}
-
-#Adeliepinguin {
-    background-image: url(/img/a-pair-of-adelie-penguins-photo-from-june-1984-all-hands-magazine-d14147-1600.jpg);
-}
-
-#Weddellrobbe {
-    background-image: url(/img/233fb77f529cf3c5ecf69e3e7c5083d276fb29cd.jpeg);
-}
-
-#Krabbenfresserrobbe {
-    background-image: url(/img/65ddb00cf6e493caae162a86b78c69459f1ada85.jpeg);
-}
-
-#Seeleopard {
-    background-image: url(/img/75ZKMEOKZFCY5LI5V4ZM42ED2M.avif);
-}
-
-#Antarktikskua {
-    background-image: url(/img/South_polar_skua.jpg);
-}
-
-nav {
-    position: relative;
-    display: flex;
-    padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-
-nav img {
-    position: absolute;
-    display: absolute;
-    width: 150px;
-    right: 5%;
-}
-
-
-
 
 .sidebar {
     position: fixed;
@@ -294,54 +341,54 @@ label #cancel {
     }
 }
 
-.breadcrumbs ul svg {
-    width: 30px;
-}
-
-.breadcrumbs {
-    padding: 10px 48px;
-    box-shadow: 0 4px 30px -10px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    background: white;
-}
-
-.breadcrumbs ul {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    padding: 0;
-    margin-left: 20%;
-    gap: 8px;
-}
-
-.breadcrumbs ul li:first-child::after {
-    margin-left: 8px;
-}
-
-.breadcrumbs ul li:not(:last-child)::after {
-    content: "›";
-    font-size: 2.3rem;
-    font-weight: 500;
+nav {
     position: relative;
-
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.breadcrumbs ul li a {
+
+nav img {
+    width: 150px;
+    display: absolute;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    margin-left: -75px;
+}
+
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: black;
     text-decoration: none;
-    color: #000;
+    font-size: 13px;
 }
 
-.breadcrumbs ul li a:hover {
-    color: skyblue;
+.nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: skyblue;
+    display: block;
+    margin: auto;
 }
 
-svg:hover {
-    fill: skyblue
-}
-
-.breadcrumbs ul li:last-child a {
-    font-weight: bold;
-
+.nav-links ul li:hover::after {
+    width: 100%;
 }
 
 footer {
@@ -353,50 +400,160 @@ footer {
     font-weight: 700;
 }
 
-main h1 {
-    margin-left: auto;
-    margin-right: auto;
+
+
+.breadcrumbs {
+    padding: 10px;
+    box-shadow: 0 4px 30px -10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    background: white;
+    margin: auto;
 }
 
-.user-orderstable {
-    background: #fff
+.breadcrumbs ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    justify-content: space-evenly;
 }
 
-.user-orderstable table {
-    border-top: 0
+.breadcrumbs ul li a {
+    text-decoration: none;
+    color: #000;
 }
 
-.user-orderstable thead {
-    background-color: #c00
+.breadcrumbs ul li a:hover {
+    color: skyblue;
 }
 
-.user-orderstable tr td,
-.user-orderstable tr th {
-    border-bottom: 2px solid #f7f7f7;
-    padding: 20px
+
+main .buy {
+    background: skyblue;
+    color: white;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    width: 30px;
+    flex: 1;
 }
 
-.user-orderstable tr td:first-child {
-    font-weight: 600
+.btn, input[type="button"] {
+    display: inline-block;
+    height: 50px;
+    width: 146px;
+    padding: 0 0;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 46px;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: blue;
+    border-radius: 30px;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+    box-sizing: border-box;
+    margin: auto;
+} 
+
+.btn button {
+    text-decoration: none;
+    border: none;
+    background: none;
+    font-weight: bold;
 }
 
-.user-orders__table tr:last-child td {
-    border-bottom: none
+main .buy p{
+    padding-top: 15vh;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: auto;
+    
 }
 
-main h1,
-h3 {
+.btn:hover, input[type="button"]:hover   {
+    background-color: #0097fc;
+}
+
+.slider-wrapper{
+    position: relative;
+    max-width: 48rem;
+    flex: 2;
+
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16 / 12;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+}
+
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.container{
+    display: flex;
+    margin-top: 20px;
+}
+
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+    
+}
+
+.slider-nav a:hover{
+    opacity: 1;
+}
+
+main p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    box-sizing: inherit;
+}
+
+main #pingu {
+    width: 50%;
+    display: flex;
+    margin: auto;
+}
+
+h1{
     text-align: center;
 }
 
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 50%;
-    padding-left: 14px;
-    padding-right: 14px;
+main p{
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: justify;
+    
 }
 
-.container p {
-    text-align: center;
-}

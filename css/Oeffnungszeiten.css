@@ -113,34 +113,7 @@ section aside:hover {
     width: 100%;
     background-position: center;
     background-size: cover;
-}
-
-#Kaiserpinguin {
-    background-image: url(/img/emperor-penguins-429128.jpg);
-}
-
-#Zügelpinguin {
-    background-image: url(/img/42008104_2614a3d22d_o.jpg);
-}
-
-#Adeliepinguin {
-    background-image: url(/img/a-pair-of-adelie-penguins-photo-from-june-1984-all-hands-magazine-d14147-1600.jpg);
-}
-
-#Weddellrobbe {
-    background-image: url(/img/233fb77f529cf3c5ecf69e3e7c5083d276fb29cd.jpeg);
-}
-
-#Krabbenfresserrobbe {
-    background-image: url(/img/65ddb00cf6e493caae162a86b78c69459f1ada85.jpeg);
-}
-
-#Seeleopard {
-    background-image: url(/img/75ZKMEOKZFCY5LI5V4ZM42ED2M.avif);
-}
-
-#Antarktikskua {
-    background-image: url(/img/South_polar_skua.jpg);
+    background-image: url(/img/antarctica-482686_1280.jpg);
 }
 
 nav {
@@ -353,50 +326,34 @@ footer {
     font-weight: 700;
 }
 
-main h1 {
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.user-orderstable {
-    background: #fff
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
-
-.user-orderstable table {
-    border-top: 0
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
-
-.user-orderstable thead {
-    background-color: #c00
-}
-
-.user-orderstable tr td,
-.user-orderstable tr th {
-    border-bottom: 2px solid #f7f7f7;
-    padding: 20px
-}
-
-.user-orderstable tr td:first-child {
-    font-weight: 600
-}
-
-.user-orders__table tr:last-child td {
-    border-bottom: none
-}
-
-main h1,
 h3 {
-    text-align: center;
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
-.container {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 50%;
-    padding-left: 14px;
-    padding-right: 14px;
-}
-
-.container p {
-    text-align: center;
+.Oeffnungszeiten{
+    margin-left: 35%;
+    
 }
