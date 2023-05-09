@@ -335,12 +335,101 @@ footer {
     font-weight: 700;
 }
 
-main img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: auto;
+/* Center the map image */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 250px;
+    }
+
+    label #btn,
+    label #cancel {
+        font-size: 25px;
+    }
+
+    label #cancel {
+        left: -220px;
+    }
+
+    #check:checked ~ .sidebar {
+        left: 0;
+    }
+
+    #check:checked ~ label #btn {
+        left: 20%;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    #check:checked ~ label #cancel {
+        left: 220px;
+    }
+
+    .breadcrumbs ul {
+        margin-left: 10%;
+    }
 }
 
+@media screen and (max-width: 600px) {
+    .sidebar {
+        width: 200px;
+    }
 
+    label #btn,
+    label #cancel {
+        font-size: 20px;
+    }
+
+    label #cancel {
+        left: -170px;
+    }
+
+    #check:checked ~ .sidebar {
+        left: 0;
+    }
+
+    #check:checked ~ label #btn {
+        left: 15%;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    #check:checked ~ label #cancel {
+        left: 170px;
+    }
+
+    .breadcrumbs ul {
+        margin-left: 5%;
+    }
+
+    h1.Titel {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav img {
+        width: 100px;
+    }
+
+    .breadcrumbs ul {
+        flex-direction: column;
+        gap: 4px;
+        margin-left: 0;
+    }
+
+    .breadcrumbs ul li:not(:last-child)::after {
+        content: "";
+    }
+
+    h1.Titel {
+        font-size: 24px;
+    }
+}
