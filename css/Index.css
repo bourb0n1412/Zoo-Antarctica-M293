@@ -91,15 +91,11 @@ section aside {
     width: var(--width-card);
 }
 
-section aside:hover {
-    box-shadow: var(--box-shadow) var(--color-bg-secondary);
-}
 
 [hidden] {
     display: none;
 }
 
-/* Headers */
 article header,
 div header,
 main header {
